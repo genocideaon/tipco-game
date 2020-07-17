@@ -1,0 +1,323 @@
+@charset "UTF-8";
+/*DB Helvethaica X Li*/
+/*DB Helvethaica X 26 UlLiIt*/
+/*DB Helvethaica X Reg*/
+
+/* =======================================================================================
+Light box
+*/
+.light-box {	
+	position: relative;
+	max-width: 83%;
+	margin: auto;
+	color: #231f20;
+}
+
+.light-box-2 {	
+	max-width: 65%;
+}
+
+@media (max-width: 992px){
+	.light-box {	
+		max-width: 65%;
+		font-size: 16px;
+	}
+	
+	.light-box-2 {	
+		max-width: 65%;
+	}
+	
+	.light-box ol,
+	.light-box ul {	
+		padding: 0 0 0 15px;
+	}
+	
+}
+
+.light-box-form {
+}
+
+.light-box-form  .light-box-content {	
+	width: 81.5%;
+}
+
+/* header */
+.light-box-header {
+	width: 50.6%;
+	position: absolute;
+	top: 2%;
+    left: 50%;
+	transform: translateX(-50%);
+	margin: 0;
+}
+
+.light-box-header img {
+	width: 100%;
+}
+
+/* content */
+.light-box-content {	
+	position: absolute;
+	top: 21.5%;
+    left: 9.6%;
+    width: 85.5%;
+    padding: 15px;
+    height: 61%;
+	overflow: auto;
+}
+
+.light-box-content h2 {	
+	font-size: 35px;
+}
+
+.light-box-content span {
+	color: #898639;
+}
+
+@media (max-width: 992px){
+	.light-box-content h2 {	
+		font-size: 20px;
+	}
+	
+	.light-box-content br {	
+		display: none;
+	}
+	
+}
+
+/* scroll bar */
+.light-box-content::-webkit-scrollbar {
+    width: 20px;
+    height: 18px;
+	background-color: transparent;	
+}
+
+.light-box-content::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #451f15;
+}
+
+.light-box-content::-webkit-scrollbar-thumb {
+    height: 6px;
+    border: 6px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    -webkit-border-radius: 10px;
+	background-color: #f29f42;
+    -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05), inset 1px 1px 0px rgba(0, 0, 0, 0.05);
+}
+
+.light-box-content::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+.light-box-content::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+/* button */
+.light-box-button {
+	border: 0;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	background: none;
+	padding: 0;
+	width: 13.7%;
+}
+
+
+/* button close */
+.light-box-close {	
+	position: absolute;
+	top: 0%;
+	right: -4%;
+	width: 12.7%;
+}
+
+.light-box-button-go {
+	position: absolute;
+	top: 24%;
+	right: -4%;
+	width: 12.7%;
+}
+
+.light-box-2 .light-box-button-go  {	
+	top: 17%;
+}
+
+
+/* =======================================================================================
+Register
+*/
+.light-box-register div {
+	padding-bottom: 1px;
+}
+
+
+.light-box-register label + input:last-child {
+	margin: 0 0 50px;
+	
+}
+
+.light-box-register label {
+	font-size: 30px;
+	display: block;
+	margin: 20px 0 0;
+}
+
+.light-box-register [type="text"],
+.light-box-register [type="tel"],
+.light-box-register textarea {
+	background: #d88d4a;
+	height: 48px;
+	line-height: 48px;
+	border-radius: 10px;
+	border: 0;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 5px;
+}
+
+.light-box-register textarea {
+	line-height: 1.1;
+	height: 100px;
+	
+}
+
+.light-box-register submit{
+	line-height: 1.1;
+	height: 100px;
+	
+}
+
+.light-box-register [type="submit"] {
+	border: 0;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	background: none;
+	padding: 0;
+	width: 17.7%;
+}
+
+@media (max-width: 768px){
+	.light-box-register label {
+		font-size: 20px;
+	}
+
+	.light-box-register [type="text"],
+	.light-box-register [type="tel"],
+	.light-box-register textarea {
+		height: 30px;
+		line-height: 30px;
+	}
+
+	.light-box-register textarea {
+		height: 50px;
+		
+	}
+}
+/* =======================================================================================
+before
+*/
+.light-box_short {
+	
+}
+.light-box_short .light-box-content {
+    top: 25.5%;
+    height: 52%;
+}
+
+/* content */
+.light-box-before h2 {
+	margin: 0 0 15px;
+	text-align: center;
+}
+
+.light-box-before ul {
+	margin: 0 0 15px;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+	font-size: 24px;
+	text-align: center;
+}
+
+
+.light-box-before p {
+	margin: 0;
+	font-size: 36px;
+	text-align: center;
+}
+
+.fancybox-opened .fancybox-skin {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+@media (max-width: 992px){
+	.light-box-before li {
+		width: auto;
+		float: none;
+		font-size: 16px;
+	}
+	
+	.light-box-before p {
+		font-size: 20px;
+	}
+
+	
+}
+
+
+/* prize */
+.light-box-prize {
+	text-align: center;
+	margin: 15px 0;
+}
+
+.light-box-prize ol {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,244 @@
+@charset "UTF-8";
+/* element from bottom */
+@keyframes bounce-from-bottom {
+	0% {
+		transform: translateY(200%);
+	}
+	
+	60% {
+		transform: translateY(0%);
+	}
+	
+	100% {
+		transform: translateY(3%);
+	}
+}
+
+/* element from top */
+@keyframes bounce-from-top {
+	0% {
+		opacity: 0;
+		transform: translateY(-400%);
+	}
+	1% {
+		opacity: 1;
+	}
+	70% {
+		transform: translateY(30%);
+	}
+	
+	100% {
+		transform: translateY(0%);
+		opacity: 1;
+	}
+}
+
+/* element from left */
+@keyframes run-from-left {
+	0% {
+		transform: translateX(-200%);
+	}
+	
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+/* button play bounce loop */
+@keyframes button-bounce-loop {
+	0%, 100% {
+		transform: translate(-50%, 0);
+	}
+	
+	50% {
+		transform: translate(-50%, 3%);
+	}
+}
+
+/* menu */
+@keyframes menu-from-top {
+	0% {
+		transform: translateY(-400%);
+	}
+	70% {
+		transform: translateY(5%);
+	}
+	
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+/* play */
+@keyframes show-from-left {
+	0% {
+		transform: translateX(100%);
+	}
+	
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes hide-to-left {
+	0% {
+		transform: translateX(0);
+	}
+	
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+/* bubble */
+@keyframes bubble {
+	0%, 100% {
+		transform: translate(0);
+	}
+	
+	25% {
+		transform: translate(10%, 0);
+	}
+	
+	50% {
+		transform: translate(0, 10%);
+	}
+	
+	70% {
+		transform: translate(10%, 10%);
+	}
+	
+}
+
+/* label */
+@keyframes label-loop {
+	0%, 100% {
+		transform: translateY(0);
+	}
+	
+	50% {
+		transform: translateY(7%);
+	}
+}
+
+
+/* element from bottom */
+@keyframes from-bottom {
+	0% {
+		transform: translateY(200%);
+	}
+	
+	
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+/* car result */
+@keyframes car-result {
+	0% {
+		transform: translateX(-243%);
+	}
+	
+	100% {
+		transform: translateX(0);
+	}
+}
+
+/* show speach */
+@keyframes speach {
+	0% {
+		opacity: 0;
+	}
+	
+	1%, 100% {
+		opacity: 1;
+	}
+	
+}
+
+/* victory */
+@keyframes zoom-bounce {
+	0% {
+		transform: scale(0)
+	}
+	
+	80% {
+		transform: scale(1.1)
+	}
+	
+	100% {
+		transform: scale(1)
+	}
+	
+	
+}
+
+/* bounce loop */
+@keyframes loop-bounce {
+	0% {
+		transform: scale(1)
+	}
+	
+	80% {
+		transform: scale(1.1)
+	}
+	
+	100% {
+		transform: scale(1)
+	}
+	
+	
+}
+
+
+/* bounce loop */
+@keyframes fade-loop {
+	0%, 100% {
+		opacity: 1;
+	}
+	
+	50% {
+		opacity: 0;
+	}
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

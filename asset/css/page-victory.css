@@ -1,0 +1,351 @@
+@charset "UTF-8";
+/*DB Helvethaica X Li*/
+/*DB Helvethaica X 26 UlLiIt*/
+/*DB Helvethaica X Reg*/
+
+/* =======================================================================================
+Victory
+*/
+.victory {
+	background: url(../images/victory/bg.jpg) no-repeat center / 100%;
+	overflow: hidden;
+	transform: translateY(-100%);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* content */
+.victory-content {
+	background: url(../images/victory/label.png) no-repeat center bottom / 100%;
+	padding: 0 0 46%;
+	width: 71.7%;
+	position: relative;
+	margin: 7% auto 0;
+}
+
+.star-top {
+	position: absolute;
+	top: 2%;
+	left: 3.5%;
+	width: 11.2%;
+}
+
+.star-top__right {
+	left: auto;
+	right: 3.5%;
+}
+
+/* detail */
+.victory-content-detail {
+	position: absolute;
+	top: 18%;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: 0;
+	width: 62.6%;
+	
+}
+
+.victory-content-detail img {
+	width: 100%;
+}
+
+
+
+/* star */
+.star {
+	position: absolute;
+	bottom: -5.5%;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+.star i {
+	width: 15.9%;
+	display: inline-block;
+}
+
+
+/* share */
+.button-share {
+	position: absolute;
+	bottom: 6%;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	width: 40.8%;
+	
+}
+
+
+
+
+
+
+
+
+
+/* =======================================================================================
+Prize
+*/
+.prize-wrapper {
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: opacity .4s .4s linear;
+}
+
+.prize-wrapper.active {
+	opacity: 1;
+}
+
+.prize {
+	background: url(../images/victory/bg-2.jpg) no-repeat center / cover;
+	height: 100%;
+}
+
+
+/* prize item */
+.prize-item {
+	position: absolute;
+	top: 23%;
+	left: 50%;
+	transform: translateX(-50%) scale(.8);
+	width: 13%;
+	transition: transform .4s .4s linear;
+	opacity: .2;
+}
+
+.prize.active .prize-item {
+	animation: loop-prize .6s 1s infinite;
+}
+
+.prize.active .prize-item-2 {
+	animation-delay: 1.2s;
+}
+
+.prize.active .prize-item-3 {
+	animation-delay: 1.4s;
+}
+
+.prize-item.active {
+	transform: translateX(-50%) scale(1);
+	opacity: 1;
+}
+
+@keyframes loop-prize {
+		0%, 100% {
+			opacity: .2;
+		}
+		50% {
+			opacity: 1;
+		}
+}
+
+.prize-item a {
+	position: absolute;
+	bottom: 11%;
+	left: 46%;
+	transform: translateX(-50%);
+	width: 85%;
+	z-index: 1;
+}
+
+.prize-item > img {
+	z-index: 1;
+	position: relative;
+}
+
+.prize-item-1 a {
+	position: absolute;
+	bottom: 11%;
+	left: 46%;
+	transform: translateX(-50%);
+	width: 85%;
+}
+
+/* item 1 */
+.prize-item-1 {
+    top: 34%;
+    left: 12%;
+    width: 30%;
+}
+
+.prize-item-1 a {
+	bottom: 5%;
+	left: 46%;
+	width: 34%;
+}
+
+.prize-item-1 .prize-gimmick {
+    width: 135%;
+    top: -38%;
+}
+
+    
+
+/* item 3 */
+.prize-item-3 {
+	top: 37%;
+	left: 89%;
+	width: 39%;
+}
+
+.prize-item-3 a {
+	bottom: -2%;
+    left: 46%;
+    width: 27%;
+}
+
+.prize-item-3 .prize-gimmick {
+	width: 115%;
+	top: -51%;
+}
+
+
+
+/* gimmick */
+.prize-gimmick {
+	position: absolute;
+	width: 308%;
+	top: -17%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.win {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.win-1 {
+	top: -8%;
+	width: 92%;
+}
+.win-2 {
+	top: 13%;
+	width: 63%;
+}
+.win-3 {
+	top: 6%;
+	width: 79%;
+}
+
+.win-4 {
+	position: relative;
+	z-index: 1;
+}
+
+/* share */
+.prize-share {
+	position: absolute;
+	bottom: 2%;
+	right: 0;
+	width: 22%;
+}
+
+/* animate win */
+.win-1 img {
+	transform: scale(0);
+	transition: transform .4s 1.2s linear;
+}
+
+.prize-item.active .win-1 img {
+	transform: scale(1);
+}
+
+.win-2 img {
+	transform: scale(0);
+	transition: transform .4s .8s linear;
+}
+
+.prize-item.active .win-2 img {
+	transform: scale(1);
+}
+
+.win-3 img {
+	transform: scale(0);
+	transition: transform .4s 1s linear;
+}
+
+.prize-item.active .win-3 img {
+	transform: scale(1);
+}
+
+.win-4 img {
+	opacity: 0;
+	animation: spin 2s linear infinite;
+	transition: opacity .4s .8s linear;
+}
+
+.prize-item.active .win-4 img {
+	opacity: 1;
+}
+
+@keyframes spin {
+	0%,100% {
+		transform: rotate(0);
+	}
+	
+	99.9999% {
+		transform: rotate(359deg);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

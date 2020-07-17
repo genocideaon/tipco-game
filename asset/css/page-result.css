@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/*DB Helvethaica X Li*/
+/*DB Helvethaica X 26 UlLiIt*/
+/*DB Helvethaica X Reg*/
+
+/* =======================================================================================
+Result
+*/
+.result {
+	background: url(../images/result/bg.jpg) no-repeat center bottom / 100%;
+}
+
+.result:after {
+	content: '';
+	background: url(../images/result/bg-f.png) no-repeat center bottom / 100%;
+	position: absolute;
+	
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.result-content {
+	height: 100%;
+	position: relative;
+	margin: auto;
+}
+
+/* car */
+.result-car {
+	width: 67%;
+    position: absolute;
+    bottom: 8%;
+    left: -7%;
+    padding: 0;	
+}
+
+/* speach */
+.result-text {
+	width: 48%;
+	position: absolute;
+	bottom: 36%;
+    left: 35%;
+	padding: 0;
+}

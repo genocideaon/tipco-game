@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/*DB Helvethaica X Li*/
+/*DB Helvethaica X 26 UlLiIt*/
+/*DB Helvethaica X Reg*/
+
+/* =======================================================================================
+Home
+*/
+.animate-car {
+	width: 53.417%;
+	background: url(../images/car.png) no-repeat 0 0 / auto 100%;
+	max-width: 641px;
+	padding: 0 0 29.25%;
+	display: block;
+	margin: auto;
+	animation: animate-car .3s 1s linear infinite;
+}
+
+@keyframes animate-car {
+	0% {
+		background-position: 0 0;
+	}
+	
+	33.32% {
+		background-position: 0 0;
+	}
+	
+	33.33% {
+		background-position: 50% 0;
+	}
+	
+	66.65% {
+		background-position: 50% 0;
+	}
+	
+	66.66% {
+		background-position: 100% 0;
+	}
+	
+	100% {
+		background-position: 100% 0;
+	}
+		
+}
+
+
+/*------------------------------------------------------------------------*\
+=Play phone
+\*------------------------------------------------------------------------*/
+.please-rotate-phone {
+	background: #fff;
+	background: rgba(255, 255, 255, 0.8);
+	color: #333;
+	font-size: 28px;
+
+	position: fixed;
+	z-index: 99999;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom:  0;
+
+	display: none;
+}
+
+.play-phone {
+	text-align: center;
+}
+.play-phone p {
+	position: absolute;
+	width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.play-phone img {
+	max-width: 100%;
+}
+    
+@media only screen and (orientation: portrait) { 
+	.please-rotate-phone {
+		display: block;
+	}
+}
+
+/* index */
+.index {
+	height: 100%;
+	background: #fedf15 url(../images/intro.jpg) no-repeat center bottom / auto 100%;
+	
+}
+
+.index a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,117 @@
+@charset "UTF-8";
+@import url('fonts/stylesheet.css');
+
+/* =Reset
+========================================================================== */
+html {
+    font: normal 100 24px/1.1 'DB HelvethaicaMon X 85 Blk', sans-serif, Tahoma, Arial;
+	background: #e4dfbe;
+	color: #231f20;
+	
+    -webkit-overflow-scrolling: touch;
+
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	
+}
+
+body {
+    margin: 0;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	
+}
+
+html,
+body,
+button {
+    -webkit-font-smoothing: antialiased;
+}
+
+button,
+[type="submit"] {
+	cursor: pointer;
+}
+
+input, textarea, select {
+    -webkit-appearance: none;
+	border-radius: 0;
+	vertical-align: top;
+}
+
+img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    line-height: 1.1;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+strong {
+    font-weight: 600;
+}
+
+/* =Helper
+========================================================================== */
+.clear:before,
+.clear:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main-wrapper {
+    width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.center-content {
+	height: 100%;
+	margin: auto;
+	width: 79%;
+	position: relative;
+}
+
+
+
+.hd-t {
+    display: block;
+    padding: 0;
+    text-indent: 1000%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.dsp-n {
+    display: none;
+}
+
+/* =Bundle
+========================================================================== */
+/**
+*
+* =Button more
+*
+**/

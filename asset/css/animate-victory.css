@@ -1,0 +1,117 @@
+@charset "UTF-8";
+/*DB Helvethaica X Li*/
+/*DB Helvethaica X 26 UlLiIt*/
+/*DB Helvethaica X Reg*/
+
+/* =======================================================================================
+Home
+*/
+.victory {
+	transform: translateX(100%);
+	transition: transform .4s linear;
+}
+
+.victory.play {
+	transform: translateX(0);
+}
+
+.victory-logo {
+	position: absolute;
+	top: 50%;
+	left: 50%;	
+	width: 25%;
+	transform: translate(-50%, -50%);
+}
+
+.victory.play .victory-logo img {
+	animation: bounce-from-bottom .8s .2s forwards;
+}
+
+/* bg */
+.victory-content {
+	transform: translateY(200%);
+}
+
+.victory.play .victory-content {
+	animation: from-bottom .6s 2.2s ease forwards;
+}
+
+.button-share img {
+	transform: translateY(200%);
+}
+
+.victory.play .button-share img {
+	animation: from-bottom .6s 2.6s ease forwards;
+}
+
+/* prize */
+.victory-content-detail img {
+	transform: scale(0);
+}
+
+.victory.play .victory-content-detail img {
+	animation: zoom-bounce .4s 2.8s ease forwards;
+}
+
+/* star */
+.star i {
+	transform: scale(0);
+}
+
+.victory.play .star i {
+	animation: zoom-bounce .4s 3.1s ease forwards;
+}
+
+.victory.play .star i + i {
+	animation-delay: 3.2s;
+}
+
+.victory.play .star i + i + i {
+	animation-delay: 3.3s;
+}
+
+.victory.play .star i + i + i + i {
+	animation-delay: 3.4s;
+}
+
+.victory.play .star i + i + i + i + i {
+	animation-delay: 3.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

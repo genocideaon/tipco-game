@@ -1,0 +1,558 @@
+@charset "UTF-8";
+/*DB Helvethaica X Li*/
+/*DB Helvethaica X 26 UlLiIt*/
+/*DB Helvethaica X Reg*/
+
+/* =======================================================================================
+Home
+*/
+
+/* bg */
+.play-menu {
+	transform: translateY(-200%);
+}
+
+.play-begin .play-menu {
+	animation: menu-from-top .8s .2s forwards;
+}
+
+.play-begin .play-menu {
+	animation: menu-from-top .8s .2s forwards;
+}
+
+/* bubble */
+.menu-bubble {
+	animation: bubble 10s .2s linear infinite;
+		
+}
+
+li + li .menu-bubble {
+	animation: bubble 8s .0s linear infinite;
+		
+}
+
+li + li + li .menu-bubble {
+	animation: bubble 8s .2s linear infinite;
+		
+}
+
+li + li + li + li .menu-bubble {
+	animation: bubble 10s .4s linear infinite;
+		
+}
+
+li + li + li + li + li .menu-bubble {
+	animation: bubble 8s .1s linear infinite;
+		
+}
+
+/* label */
+.wait .menu-number img {
+	animation: label-loop .8s linear infinite;
+}
+
+
+/* =======================================================================================
+Play state 1
+*/
+.object-1 .clump img {
+	transform: scale(0);
+}
+
+/* step 1 */
+.object-1.step-1  .clump img {
+	animation: bounce-appear .6s forwards;
+	transition: top .4s;
+}
+
+.object-1.step-1  .clump img + img {
+	animation-delay: .1s;
+}
+
+.object-1.step-1  .clump img + img + img {
+	animation-delay: .2s;
+}
+
+.object-1.step-1  .clump img + img + img + img {
+	animation-delay: .3s;
+}
+
+.object-1.step-1  .clump img:hover {
+    top: -105%;
+}
+
+/* step 2 */
+.object-1 > img {
+	transform: scale(0);
+}
+
+.object-1.step-2 > img {
+	animation: bounce-appear .6s forwards;
+}
+
+.object-1.step-2  .clump {
+	opacity: 0;
+	transition: opacity .4s;
+}
+
+
+
+/* =======================================================================================
+Play state 2
+*/
+.object-2-first {
+	opacity: 1;
+	transition: opacity 1s 3s;
+}
+
+.object-2.step-1 .object-2-first {
+	opacity: 0;
+}
+
+/* cloud */
+.cloud {
+	transform: scale(0);
+}
+
+.object-2.step-1 .cloud {
+	animation: bounce-appear .6s forwards;
+}
+
+.object-2.step-1 .cloud img {
+	animation: bubble 2s .8s linear infinite;
+}
+
+/* water */
+.wrapper-water {
+	opacity: 0;
+	transition: opacity 1s 1s;
+}
+
+.object-2.step-1 .wrapper-water {
+	opacity: 1;
+}
+
+.water {
+	animation: water 1s linear infinite;
+}
+
+.water-2 {
+	animation-delay: .5s;
+}
+
+.water-3 {
+	animation-delay: .2s;
+}
+
+.water-6 {
+	animation-delay: .4s;
+}
+
+.water-8 {
+	animation-delay: .6s;
+}
+
+.water-9 {
+	animation-delay: .8s;
+}
+
+/* pine apple */
+.object-2 > img {
+	transform: scale(0);
+}
+
+.object-2.step-1 > img {
+	animation: bounce-appear .6s 3.5s forwards;
+}
+
+
+
+
+
+
+/* =======================================================================================
+Play state 3
+*/
+.object-3-first {
+	opacity: 1;
+	transition: opacity 1s 2.5s;
+}
+
+.object-3.step-1 .object-3-first {
+	opacity: 0;
+}
+/* star */
+.fertilizer-star {
+	transform: scale(0);
+}
+
+.object-3.step-1 .fertilizer-star {
+	animation: bounce-appear .6s forwards;
+}
+
+.object-3.step-1 .fertilizer-star img {
+	animation: fertilizer-bottle .2s .8s linear forwards;
+}
+
+/* fertilizer */
+.fertilizer {
+	opacity: 0;
+}
+
+.object-3.step-1 .fertilizer {
+	animation: fertilizer 2s 1s linear forwards;
+}
+
+/* pine apple */
+.object-3 > img {
+	transform: scale(0);
+}
+
+.object-3.step-1 > img {
+	animation: bounce-appear .6s 3s forwards;
+}
+
+.object-3 .pine-apple img {
+	transform: scale(0);
+}
+
+.object-3.step-1 .pine-apple img {
+	animation: bounce-appear .6s 3.4s forwards;
+}
+
+
+
+/* =======================================================================================
+Play state 4
+*/
+.object-4-first {
+	opacity: 1;
+	transition: opacity 1s 2.5s;
+}
+
+.object-4.step-1 .object-4-first {
+	opacity: 0;
+}
+
+/* umbrella */
+.umbrella {
+	transform: scale(0);
+}
+
+.object-4.step-1 .umbrella {
+	animation: bounce-appear .6s forwards;
+}
+
+.object-4.step-1 .umbrella img {
+	animation: bubble 2s .8s linear infinite;
+}
+
+/* pine apple */
+.object-4 > img {
+	transform: scale(0);
+}
+
+.object-4.step-1 > img {
+	animation: bounce-appear .6s 3s forwards;
+}
+
+.object-4 .object-4-pine-apple img {
+	transform: scale(0);
+}
+
+.object-4.step-1 .object-4-pine-apple img {
+	animation: bounce-appear .6s 3.4s forwards;
+}
+
+
+/* =======================================================================================
+Play state 5
+*/
+.object-5-first {
+	opacity: 1;
+	transition: opacity 1s 2.5s;
+	position: relative;
+	z-index: 1;
+}
+
+.object-4.step-2 .object-5-first {
+	/*opacity: 0;*/
+}
+
+/* star */
+.shovel {
+	opacity: 0;
+}
+
+.object-4.step-2 .shovel {
+	animation: shovel 3s forwards;
+}
+
+
+/* collapse object */
+.object {
+	transform: translateX(-50%) scale(1);
+}
+
+.object.step-1 {
+	transform: translateX(-50%) scale(0);
+	transition: transform .6s 3s;
+}
+
+/* enlarge step 5 */
+.object-5 {
+	transform: scale(0);
+}
+
+.object-5.step-1 {
+	animation: zoom-bounce .8s 3s forwards;
+}
+
+.object-5 img {
+	animation: state-5 8s .2s linear infinite;
+}
+
+.object-5 > img {
+	animation-delay: 2s;
+}
+
+
+
+
+
+
+/* =======================================================================================
+Animate play
+*/
+@keyframes bounce-appear {
+	0% {
+		transform: scale(0) translateY(0);
+	}
+	
+	40% {
+		transform: scale(1) translateY(-30%);
+	}
+	
+	60% {
+		transform: translateY(0%);
+	}
+	
+	80% {
+		transform: translateY(-10%);
+	}
+	
+	100% {
+		transform: scale(1) translateY(0);
+	}
+}
+
+/* water */
+@keyframes water {
+	0% {
+		transform: translateY(-200%);
+		opacity: 0;
+	}
+	
+	25% {
+		opacity: 1;
+	}
+	
+	50% {
+		opacity: 1;
+	}
+	
+	75% {
+		opacity: 1;
+	}
+	
+	100% {
+		transform: translateY(0);
+		opacity: 0;
+	}
+}
+
+/* fertilizer */
+@keyframes fertilizer-bottle {
+	0% {
+		transform: rotate(0);
+	}
+	
+	100% {
+		transform: rotate(-135deg);
+	}
+}
+@keyframes fertilizer {
+	0% {
+		transform: translateY(-40%);
+		opacity: 0;
+	}
+	
+	10% {
+		transform: translateY(0%);
+		opacity: 1;
+	}
+	
+	20% {
+		transform: translateY(40%);
+		opacity: 0;
+	}
+	
+	30% {
+		transform: translateY(80%);
+		opacity: 1;
+	}
+	40% {
+		transform: translateY(120%);
+		opacity: 0;
+	}
+	50% {
+		transform: translateY(140%);
+		opacity: 1;
+	}
+	60% {
+		transform: translateY(160%);
+		opacity: 0;
+	}
+	70% {
+		transform: translateY(200%);
+		opacity: 1;
+	}
+	80% {
+		transform: translateY(240%);
+		opacity: 0;
+	}
+	90% {
+		transform: translateY(280%);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(320%);
+		opacity: 1;
+	}
+}
+
+
+
+/* state 5 */
+@keyframes fade-in-fade-out {
+	0%, 100% {
+		opacity: 0;
+	}
+	
+	20%, 80% {
+		opacity: 1;
+	}
+}
+	
+@keyframes state-5 {
+	0%, 100% {
+		transform: translate(0);
+	}
+	
+	25% {
+		transform: translate(3%, 0);
+	}
+	
+	50% {
+		transform: translate(0, 3%);
+	}
+	
+	70% {
+		transform: translate(3%, 3%);
+	}
+	
+}
+
+@keyframes shovel {
+	0% {
+		opacity: 0;
+		transform: translate(77%, 73%);
+	}
+	
+	10% {
+		opacity: 1;
+		transform: translate(77%, 73%);
+	}
+	
+	15% {
+		transform: translate(92%, 44%);
+	}
+	
+	20% {
+		transform: translate(77%, 73%);
+	}
+	
+	25% {
+		transform: translate(92%, 44%);
+	}
+	
+	30% {
+		transform: translate(77%, 73%);
+	}
+	
+	60% {
+		transform: translate(-94%, 66%) rotate(-66deg);
+	}
+	
+	65% {
+		transform: translate(-110%, 36%) rotate(-66deg);
+	}
+	
+	70% {
+		transform: translate(-94%, 66%) rotate(-66deg);
+	}
+	
+	75% {
+		transform: translate(-110%, 36%) rotate(-66deg);
+	}
+	
+	80% {
+		transform: translate(-94%, 66%) rotate(-66deg);
+	}
+	
+	90% {
+		opacity: 1;
+		transform: translate(-94%, 66%) rotate(-66deg);
+	}
+	
+	100% {
+		opacity: 0;
+		transform: translate(-94%, 66%) rotate(-66deg);
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

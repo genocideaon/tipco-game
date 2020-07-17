@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/*DB Helvethaica X Li*/
+/*DB Helvethaica X 26 UlLiIt*/
+/*DB Helvethaica X Reg*/
+
+/* =======================================================================================
+Home
+*/
+
+/* bg */
+.home {
+	transform: translateY(200%);
+}
+
+.home.play {
+	animation: bounce-from-bottom .8s .2s forwards;
+}
+
+/* top */
+.button-play img {
+	transform: translateY(-400%);
+	opacity: 0;
+}
+
+.play .button-play img {
+	animation: bounce-from-top .8s .8s ease-in-out forwards;
+}
+
+.play .button-play {
+	animation: button-bounce-loop .8s 2.6s linear infinite;
+	
+}
+
+.home-logo img {
+	transform: translateY(-400%);
+	opacity: 0;
+}
+
+.play .home-logo img {
+	animation: bounce-from-top .8s 1s ease-in-out forwards;
+}
+
+.victory {
+	transform: translateY(-400%);
+	opacity: 0;
+}
+
+.play .victory {
+	animation: bounce-from-top .8s 1.4s ease-in-out forwards;
+}
+
+/* bottom */
+.home-thumb div {
+	transform: translateX(-400%);
+}
+
+.play .home-thumb div {
+	animation: run-from-left 1.6s .6s linear forwards;
+}
+
+.home-menu li {
+	transform: translateY(200%);
+}
+
+.play .home-menu li {
+	animation: bounce-from-bottom .8s 1.2s forwards;
+}
+
+.play .home-menu li + li {
+	animation-delay: 1.4s;
+}
+
+.play .home-menu li + li + li {
+	animation-delay: 1.6s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
